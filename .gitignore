@@ -1,0 +1,4 @@
+*.terraform
+*.tfstate
+*.docx
+.terraform.lock.hcl
