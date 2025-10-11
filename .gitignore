@@ -1,4 +1,6 @@
 *.terraform
 *.tfstate
 *.docx
+*.pdf
 .terraform.lock.hcl
+*.backup
