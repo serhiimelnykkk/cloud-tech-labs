@@ -4,3 +4,4 @@
 *.pdf
 .terraform.lock.hcl
 *.backup
+*.tmp
