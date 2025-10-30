@@ -1,0 +1,9 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - apache2
+runcmd:
+  - echo "This is the default page for az104-06-vm2" > /var/www/html/index.html
+  - mkdir -p /var/www/html/video
+  - echo "This is the VIDEO server (vm2)" > /var/www/html/video/index.html
+  - systemctl restart apache2

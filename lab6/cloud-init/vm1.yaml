@@ -1,0 +1,9 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - apache2
+runcmd:
+  - echo "Hello World from az104-06-vm1" > /var/www/html/index.html
+  - mkdir -p /var/www/html/image
+  - echo "This is the IMAGE server (vm1)" > /var/www/html/image/index.html
+  - systemctl restart apache2
